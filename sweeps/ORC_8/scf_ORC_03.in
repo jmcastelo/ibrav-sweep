@@ -1,0 +1,30 @@
+&control
+    calculation = 'scf'
+    outdir = 'sweeps/ORC_8'
+    prefix = 'ORC_03'
+    verbosity = 'high'
+    pseudo_dir = './'
+/&end
+&system
+    ibrav = 8
+    celldm(1) = 9.42477796076938
+celldm(2) = 1.5
+celldm(3) = 2
+    ecutwfc = 80
+    nat = 1
+    ntyp = 1
+    occupations = 'smearing'
+    degauss = 0.005
+/&end
+&electrons
+    conv_thr = 1e-08
+/&end
+&ions
+    ion_dynamics = 'bfgs'
+/&end
+ATOMIC_SPECIES
+C  10.811  C_ONCV_PBE_sr.upf
+ATOMIC_POSITIONS { crystal }
+C  0  0  0
+K_POINTS { automatic }
+1 1 1 0 0 0

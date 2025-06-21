@@ -1,0 +1,33 @@
+&control
+    calculation = 'bands'
+    outdir = 'sweeps/FCC_2'
+    prefix = 'FCC_03'
+    verbosity = 'high'
+    pseudo_dir = './'
+/&end
+&system
+    ibrav = 2
+    celldm(1) = 9.42477796076938
+    ecutwfc = 80
+    nat = 1
+    ntyp = 1
+    occupations = 'smearing'
+    degauss = 0.005
+/&end
+&electrons
+    conv_thr = 1e-08
+/&end
+&ions
+    ion_dynamics = 'bfgs'
+/&end
+ATOMIC_SPECIES
+C  10.811  C_ONCV_PBE_sr.upf
+ATOMIC_POSITIONS { crystal }
+C  0  0  0
+K_POINTS { crystal_b }
+5
+K 1
+L 1
+U 1
+W 1
+X 1

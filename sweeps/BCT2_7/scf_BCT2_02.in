@@ -1,0 +1,29 @@
+&control
+    calculation = 'scf'
+    outdir = 'sweeps/BCT2_7'
+    prefix = 'BCT2_02'
+    verbosity = 'high'
+    pseudo_dir = './'
+/&end
+&system
+    ibrav = 7
+    celldm(1) = 6.283185307179586
+celldm(3) = 1.5
+    ecutwfc = 80
+    nat = 1
+    ntyp = 1
+    occupations = 'smearing'
+    degauss = 0.005
+/&end
+&electrons
+    conv_thr = 1e-08
+/&end
+&ions
+    ion_dynamics = 'bfgs'
+/&end
+ATOMIC_SPECIES
+C  10.811  C_ONCV_PBE_sr.upf
+ATOMIC_POSITIONS { crystal }
+C  0  0  0
+K_POINTS { automatic }
+1 1 1 0 0 0

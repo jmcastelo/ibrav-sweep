@@ -1,0 +1,436 @@
+
+     Program PWSCF v.7.3.1 starts on 17Jun2025 at 11:46:14 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      96 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                    96
+
+     MPI processes distributed on     1 nodes
+     122072 MiB available memory on the printing compute node when the environment starts
+ 
+     Waiting for input...
+     Reading input from standard input
+Warning: card &IONS ignored
+Warning: card     ION_DYNAMICS = 'BFGS' ignored
+Warning: card /&END ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     sweeps/ORCI_11/ORCI_01.save/
+ 
+ 
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         271     271     87                 3345     3345     627
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =           11
+     lattice parameter (alat)  =       3.1416  a.u.
+     unit-cell volume          =      34.2619 (a.u.)^3
+     number of atoms/cell      =            1
+     number of atomic types    =            1
+     number of electrons       =         4.00
+     number of Kohn-Sham states=            6
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   3.141593  celldm(2)=   1.300000  celldm(3)=   1.700000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   0.500000   0.650000   0.850000 )  
+               a(2) = (  -0.500000   0.650000   0.850000 )  
+               a(3) = (  -0.500000  -0.650000   0.850000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.588235 )  
+               b(2) = ( -1.000000  0.769231  0.000000 )  
+               b(3) = (  0.000000 -0.769231  0.588235 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ./C_ONCV_PBE_sr.upf
+     MD5 check sum: b68b6074392897e22e8b22f1bd7aa93e
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1248 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     atomic species   valence    mass     pseudopotential
+     C                 4.00    10.81100     C ( 1.00)
+
+      8 Sym. Ops., with inversion, found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  2     180 deg rotation - cart. axis [0,0,1]        
+
+ cryst.   s( 2) = (     0          0          1      )
+                  (     1         -1          1      )
+                  (     1          0          0      )
+
+ cart.    s( 2) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  3     180 deg rotation - cart. axis [0,1,0]        
+
+ cryst.   s( 3) = (    -1          1         -1      )
+                  (     0          0         -1      )
+                  (     0         -1          0      )
+
+ cart.    s( 3) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  4     180 deg rotation - cart. axis [1,0,0]        
+
+ cryst.   s( 4) = (     0         -1          0      )
+                  (    -1          0          0      )
+                  (    -1          1         -1      )
+
+ cart.    s( 4) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  5     inversion                                    
+
+ cryst.   s( 5) = (    -1          0          0      )
+                  (     0         -1          0      )
+                  (     0          0         -1      )
+
+ cart.    s( 5) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  6     inv. 180 deg rotation - cart. axis [0,0,1]   
+
+ cryst.   s( 6) = (     0          0         -1      )
+                  (    -1          1         -1      )
+                  (    -1          0          0      )
+
+ cart.    s( 6) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  7     inv. 180 deg rotation - cart. axis [0,1,0]   
+
+ cryst.   s( 7) = (     1         -1          1      )
+                  (     0          0          1      )
+                  (     0          1          0      )
+
+ cart.    s( 7) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  8     inv. 180 deg rotation - cart. axis [1,0,0]   
+
+ cryst.   s( 8) = (     0          1          0      )
+                  (     1          0          0      )
+                  (     1         -1          1      )
+
+ cart.    s( 8) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group D_2h (mmm) 
+     there are  8 classes
+     the character table:
+
+       E     C2    C2'   C2''  i     s_v   s_v'  s_v''
+A_g    1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+B_1g   1.00  1.00 -1.00 -1.00  1.00  1.00 -1.00 -1.00
+B_2g   1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00
+B_3g   1.00 -1.00 -1.00  1.00  1.00 -1.00 -1.00  1.00
+A_u    1.00  1.00  1.00  1.00 -1.00 -1.00 -1.00 -1.00
+B_1u   1.00  1.00 -1.00 -1.00 -1.00 -1.00  1.00  1.00
+B_2u   1.00 -1.00  1.00 -1.00 -1.00  1.00 -1.00  1.00
+B_3u   1.00 -1.00 -1.00  1.00 -1.00  1.00  1.00 -1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+     C2       2
+          180 deg rotation - cart. axis [0,0,1]                  
+     C2'      4
+          180 deg rotation - cart. axis [1,0,0]                  
+     C2''     3
+          180 deg rotation - cart. axis [0,1,0]                  
+     i        5
+          inversion                                              
+     s_v      6
+          inv. 180 deg rotation - cart. axis [0,0,1]             
+     s_v'     8
+          inv. 180 deg rotation - cart. axis [1,0,0]             
+     s_v''    7
+          inv. 180 deg rotation - cart. axis [0,1,0]             
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        C      tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1        C      tau(   1) = (  0.0000000  0.0000000  0.0000000  )
+
+     number of k points=    12  Gaussian smearing, width (Ry)=  0.0050
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.6730104   0.1597019   0.0000000), wk =   0.1666667
+        k(    2) = (   0.3269896   0.6095289   0.0000000), wk =   0.1666667
+        k(    3) = (   0.3269896   0.1597019   0.5882353), wk =   0.1666667
+        k(    4) = (   0.5000000   0.0000000   0.2941176), wk =   0.1666667
+        k(    5) = (   0.0000000   0.3846154   0.2941176), wk =   0.1666667
+        k(    6) = (   0.5000000   0.3846154   0.0000000), wk =   0.1666667
+        k(    7) = (   0.5000000   0.3846154   0.2941176), wk =   0.1666667
+        k(    8) = (   0.6730104   0.0000000   0.0000000), wk =   0.1666667
+        k(    9) = (   0.3269896   0.0000000   0.5882353), wk =   0.1666667
+        k(   10) = (   0.0000000   0.6095289   0.0000000), wk =   0.1666667
+        k(   11) = (   0.0000000   0.1597019   0.5882353), wk =   0.1666667
+        k(   12) = (   0.0000000   0.0000000   0.5882353), wk =   0.1666667
+
+                       cryst. coord.
+        k(    1) = (   0.4403114  -0.2326990  -0.4403114), wk =   0.1666667
+        k(    2) = (   0.5596886   0.2326990  -0.5596886), wk =   0.1666667
+        k(    3) = (   0.7673010   0.4403114   0.2326990), wk =   0.1666667
+        k(    4) = (   0.5000000   0.0000000   0.0000000), wk =   0.1666667
+        k(    5) = (   0.5000000   0.5000000   0.0000000), wk =   0.1666667
+        k(    6) = (   0.5000000   0.0000000  -0.5000000), wk =   0.1666667
+        k(    7) = (   0.7500000   0.2500000  -0.2500000), wk =   0.1666667
+        k(    8) = (   0.3365052  -0.3365052  -0.3365052), wk =   0.1666667
+        k(    9) = (   0.6634948   0.3365052   0.3365052), wk =   0.1666667
+        k(   10) = (   0.3961938   0.3961938  -0.3961938), wk =   0.1666667
+        k(   11) = (   0.6038062   0.6038062   0.3961938), wk =   0.1666667
+        k(   12) = (   0.5000000   0.5000000   0.5000000), wk =   0.1666667
+
+     Dense  grid:     3345 G-vectors     FFT dimensions: (  24,  24,  24)
+
+     Dynamical RAM for                 wfc:       0.04 MB
+
+     Dynamical RAM for     wfc (w. buffer):       0.04 MB
+
+     Dynamical RAM for           str. fact:       0.05 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:       0.05 MB
+
+     Dynamical RAM for                qrad:       0.41 MB
+
+     Dynamical RAM for          rho,v,vnew:       0.47 MB
+
+     Dynamical RAM for           G-vectors:       0.22 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.01 MB
+
+     Dynamical RAM for          <psi|beta>:       0.00 MB
+
+     Dynamical RAM for                 psi:       0.08 MB
+
+     Dynamical RAM for                hpsi:       0.08 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:       0.08 MB
+
+     Estimated static dynamical RAM per process >       1.87 MB
+
+     Estimated max dynamical RAM per process >       2.02 MB
+
+     The potential is recalculated from file :
+     sweeps/ORCI_11/ORCI_01.save/charge-density
+
+     Starting wfcs are    4 randomized atomic wfcs +    2 random wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     Computing kpt #:     1  of    12
+     total cpu time spent up to now is        0.2 secs
+
+     Computing kpt #:     2  of    12
+     total cpu time spent up to now is        0.3 secs
+
+     Computing kpt #:     3  of    12
+     total cpu time spent up to now is        0.4 secs
+
+     Computing kpt #:     4  of    12
+     total cpu time spent up to now is        0.5 secs
+
+     Computing kpt #:     5  of    12
+     total cpu time spent up to now is        0.5 secs
+
+     Computing kpt #:     6  of    12
+     total cpu time spent up to now is        0.6 secs
+
+     Computing kpt #:     7  of    12
+     total cpu time spent up to now is        0.7 secs
+
+     Computing kpt #:     8  of    12
+     total cpu time spent up to now is        0.8 secs
+
+     Computing kpt #:     9  of    12
+     total cpu time spent up to now is        0.9 secs
+
+     Computing kpt #:    10  of    12
+     total cpu time spent up to now is        0.9 secs
+
+     Computing kpt #:    11  of    12
+     total cpu time spent up to now is        1.0 secs
+
+     Computing kpt #:    12  of    12
+     total cpu time spent up to now is        1.1 secs
+
+     ethr =  2.50E-10,  avg # of iterations = 17.8
+
+     total cpu time spent up to now is        1.1 secs
+
+     End of band structure calculation
+
+          k = 0.6730 0.1597 0.0000 (   418 PWs)   bands (ev):
+
+    10.8886  13.6398  17.1927  18.1423  39.2837  50.2565
+
+          k = 0.3270 0.6095 0.0000 (   418 PWs)   bands (ev):
+
+    10.8886  13.6398  17.1927  18.1423  39.2837  50.2565
+
+          k = 0.3270 0.1597 0.5882 (   418 PWs)   bands (ev):
+
+    10.8886  13.6398  17.1927  18.1423  39.2837  50.2565
+
+          k = 0.5000 0.0000 0.2941 (   412 PWs)   bands (ev):
+
+     6.0476  11.7413  25.8102  25.9675  43.9691  46.2737
+
+          k = 0.0000 0.3846 0.2941 (   422 PWs)   bands (ev):
+
+     3.9403   4.6079  27.0835  34.3400  44.9723  54.5167
+
+          k = 0.5000 0.3846 0.0000 (   416 PWs)   bands (ev):
+
+     8.0887  14.9945  21.6825  22.0816  35.0884  36.4503
+
+          k = 0.5000 0.3846 0.2941 (   404 PWs)   bands (ev):
+
+     9.9541  16.1237  17.6172  17.6452  41.7931  48.1318
+
+          k = 0.6730 0.0000 0.0000 (   414 PWs)   bands (ev):
+
+    11.1282  12.4507  17.4541  20.5779  34.4075  55.5618
+
+          k = 0.3270 0.0000 0.5882 (   414 PWs)   bands (ev):
+
+    11.1282  12.4507  17.4541  20.5779  34.4075  55.5618
+
+          k = 0.0000 0.6095 0.0000 (   414 PWs)   bands (ev):
+
+     8.4127   9.4148  13.1433  31.4945  36.2931  49.6419
+
+          k = 0.0000 0.1597 0.5882 (   414 PWs)   bands (ev):
+
+     8.4127   9.4148  13.1433  31.4945  36.2931  49.6419
+
+          k = 0.0000 0.0000 0.5882 (   418 PWs)   bands (ev):
+
+     7.1528  11.1033  15.9211  29.0501  30.7790  48.7175
+
+     Writing all to output data dir sweeps/ORCI_11/ORCI_01.save/ :
+     XML data file, pseudopotentials, collected wavefunctions
+ 
+     init_run     :      1.95s CPU      0.06s WALL (       1 calls)
+     electrons    :     58.31s CPU      0.99s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.04s CPU      0.00s WALL (       1 calls)
+     wfcinit:atom :      0.13s CPU      0.00s WALL (      12 calls)
+     wfcinit:wfcr :      3.71s CPU      0.06s WALL (      12 calls)
+     potinit      :      0.26s CPU      0.00s WALL (       1 calls)
+     hinit0       :      1.66s CPU      0.05s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     58.30s CPU      0.99s WALL (       1 calls)
+     v_of_rho     :      0.21s CPU      0.00s WALL (       1 calls)
+     v_h          :      0.04s CPU      0.00s WALL (       1 calls)
+     v_xc         :      0.17s CPU      0.00s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.15s CPU      0.00s WALL (      12 calls)
+     cegterg      :     54.08s CPU      0.92s WALL (      16 calls)
+
+     Called by sum_band:
+
+     Called by *egterg:
+     cdiaghg      :      1.10s CPU      0.02s WALL (     226 calls)
+     cegterg:over :      0.43s CPU      0.01s WALL (     214 calls)
+     cegterg:upda :      1.95s CPU      0.03s WALL (     214 calls)
+     cegterg:last :      0.32s CPU      0.01s WALL (     150 calls)
+     h_psi        :     48.96s CPU      0.83s WALL (     242 calls)
+     g_psi        :      2.08s CPU      0.04s WALL (     214 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.46s CPU      0.01s WALL (     242 calls)
+     vloc_psi     :     45.40s CPU      0.77s WALL (     242 calls)
+     add_vuspsi   :      0.32s CPU      0.01s WALL (     242 calls)
+
+     General routines
+     calbec       :      0.29s CPU      0.00s WALL (     242 calls)
+     fft          :      0.06s CPU      0.00s WALL (      10 calls)
+     fftw         :     19.54s CPU      0.33s WALL (    1984 calls)
+     davcio       :      0.04s CPU      0.00s WALL (      24 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :   1m 2.58s CPU      1.11s WALL
+
+ 
+   This run was terminated on:  11:46:15  17Jun2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

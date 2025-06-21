@@ -1,0 +1,36 @@
+&control
+    calculation = 'bands'
+    outdir = 'sweeps/RHL2_5'
+    prefix = 'RHL2_01'
+    verbosity = 'high'
+    pseudo_dir = './'
+/&end
+&system
+    ibrav = 5
+    celldm(1) = 3.141592653589793
+celldm(4) = -0.15643446504023104
+    ecutwfc = 80
+    nat = 1
+    ntyp = 1
+    occupations = 'smearing'
+    degauss = 0.005
+/&end
+&electrons
+    conv_thr = 1e-08
+/&end
+&ions
+    ion_dynamics = 'bfgs'
+/&end
+ATOMIC_SPECIES
+C  10.811  C_ONCV_PBE_sr.upf
+ATOMIC_POSITIONS { crystal }
+C  0  0  0
+K_POINTS { crystal_b }
+7
+F 1
+L 1
+P 1
+P1 1
+Q 1
+Q1 1
+Z 1

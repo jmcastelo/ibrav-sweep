@@ -1,0 +1,39 @@
+&control
+    calculation = 'bands'
+    outdir = 'sweeps/ORCC_9'
+    prefix = 'ORCC_02'
+    verbosity = 'high'
+    pseudo_dir = './'
+/&end
+&system
+    ibrav = 9
+    celldm(1) = 6.283185307179586
+celldm(2) = 1.3
+celldm(3) = 1.7
+    ecutwfc = 80
+    nat = 1
+    ntyp = 1
+    occupations = 'smearing'
+    degauss = 0.005
+/&end
+&electrons
+    conv_thr = 1e-08
+/&end
+&ions
+    ion_dynamics = 'bfgs'
+/&end
+ATOMIC_SPECIES
+C  10.811  C_ONCV_PBE_sr.upf
+ATOMIC_POSITIONS { crystal }
+C  0  0  0
+K_POINTS { crystal_b }
+9
+A 1
+A1 1
+R 1
+S 1
+T 1
+X 1
+X1 1
+Y 1
+Z 1
